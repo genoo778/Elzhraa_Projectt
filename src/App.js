@@ -1,5 +1,4 @@
 import Home from './components/outpages/home/Home';
-import Login from './components/Admin/Main/Login';
 import {
   Routes,
   Route
@@ -7,7 +6,6 @@ import {
 import UniversityTimetableForm from './components/outpages/UniversityTimetableForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Registration from './components/outpages/Registration';
-import Loginst from './components/outpages/Loginst';
 import SearchForm from './components/outpages/SearchForm';
 import Instruct from './components/outpages/Instruct';
 import Homee from './components/Admin/Main/Homee';
@@ -18,6 +16,8 @@ import CollageType from './components/Admin/pages/CollageType';
 import Rsoom from './components/Admin/pages/Rsoom';
 import Countrys from './components/Admin/pages/Countrys';
 import Rooms from './components/Admin/pages/Rooms';
+import Login from './components/outpages/home/Login';
+import Loginst from './components/Admin/Main/Loginst';
 
 
 
@@ -27,11 +27,11 @@ function App() {
   return (
 
     <Routes>
-      <Route path="/" element={<Loginst />} />
+      <Route path="/" element={ <Login/>} />
       <Route path="/hh" element={<Home />} />
       <Route path="/tt" element={<UniversityTimetableForm />} />
       <Route path='/r' element={<Registration/>}/>
-      <Route path='/l' element={<Login/>}/>
+      <Route path='/l' element={<Loginst/>}/>
       <Route path='/s' element={<SearchForm/>}/>
       <Route path='/i' element={<Instruct/>}/>
       <Route path='/h' element={<Homee/>}/>

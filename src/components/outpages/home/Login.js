@@ -19,7 +19,7 @@ const Login = () => {
                 <i className="login__icon fas fa-lock"style={{marginRight:'360px',fontSize:'15px',marginTop:'5px'}}></i>
                 <input type="password" className="login__inputt" placeholder="كلمه المرور" />
               </div>
-              <a href="/h" className="button login__submit">
+              <a href="/hh" className="button login__submit">
                 <span className="button__text" style={{ marginLeft: "150px", whiteSpace: "nowrap",textDecorationLine:'none' }}>تسجيل الدخول</span>
                 <i className="button__icon fas fa-chevron-left" style={{ marginRight: "-17px", textDecorationLine:'none', whiteSpace: "nowrap" }}></i>
               </a>

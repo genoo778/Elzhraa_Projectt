@@ -17,7 +17,7 @@ const Loginst = () => {
                             <div className="card-body p-4 p-md-5">
                                 <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style={{ marginTop: "-20px", color: '#235787', marginRight: "30px" }}>
                                     الزهراء لإدارة المدن الجامعية<br />
-                                    <h5 style={{ marginRight: '-30px', marginTop: '6px', color: '#235787' }}>دخول الطلاب</h5>
+                               
                                 </h3>
                                 <form className="px-md-2" style={{ marginTop: '-30px' }}>
                                     <div className="form-outline mb-4 bold">
@@ -34,10 +34,10 @@ const Loginst = () => {
                                     </div>
 
 
-                                    <button type="button" class="btn btn-primary btn-lg btn-block " style={{ background: ' #235787' }} dir="rtl"><a href="/hh" style={{color:'white',textDecorationLine:'none'}}>دخول</a></button>
+                                    <button type="button" class="btn btn-primary btn-lg btn-block " style={{ background: ' #235787' }} dir="rtl"><a href="/h" style={{color:'white',textDecorationLine:'none'}}>دخول</a></button>
 
                                 
-                                    <p style={{marginRight:'-3px'  ,marginTop:'20px',textDecorationLine:'none'}}><a href="/r" style={{marginRight:'10px'  ,marginTop:'20px',textDecorationLine:'none'}}>تقدم الطلاب للمدن الجامعية</a></p>
+                                  
                               
 
 
