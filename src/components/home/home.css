@@ -1,0 +1,39 @@
+/* SidebarWithButton.css */
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px; /* Change left to right for RTL */
+  background-color: #111;
+  padding-top: 20px;
+  transition: right 0.3s ease; /* Change left to right for RTL */
+}
+
+.sidebar.open {
+  right: 0; /* Change left to right for RTL */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0; /* Change left to right for RTL */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay.visible {
+  display: block;
+}
+
+.content {
+  transition: margin-right 0.3s; /* Change margin-left to margin-right for RTL */
+}
+
+.content.shift {
+  margin-right: 250px; /* Change margin-left to margin-right for RTL */
+}
