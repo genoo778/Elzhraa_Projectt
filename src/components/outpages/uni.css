@@ -1,0 +1,9 @@
+.custom-button {
+    transition: background-color #235787 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .custom-button:hover {
+    background-color: #235787; /* Change the background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  

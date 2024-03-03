@@ -1,0 +1,156 @@
+/* rooms.css */
+
+/* Style for the form container */
+.form-container {
+  background-color: #f9f9f9;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 140px;
+  transition: box-shadow 0.3s ease;
+
+}
+
+/* Style for the select label */
+.form-container label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+/* Apply box shadow only when selectedCity is not null */
+.form-container.active {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Style for the select element */
+#citySelect {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%23333" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>'); /* Custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 18px;
+  cursor: pointer;
+}
+
+/* Hide the default arrow */
+#citySelect::-ms-expand,
+#citySelect::-webkit-select-arrow {
+  display: none;
+}
+
+/* Style for select options */
+#citySelect option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Style for the selected option */
+#citySelect option:checked {
+  background-color: #123252;
+  color: #fff;
+}
+
+/* Style for loading icon */
+.loading-icon {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+.btn-primary{
+
+  margin-top: 20px;
+}
+/* rooms.css */
+
+/* Style for the label */
+label {
+  display: block; /* Ensures the label takes up the full width */
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #123252; /* Text color */
+  font-weight: bold;
+  direction: rtl; /* Right-to-left text direction */
+}
+
+
+/* Style for the city details container */
+.city-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Style for the city details text */
+.city-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.city-details p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Style for the city details container with box shadow */
+.city-details.with-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.img {
+  width: 70px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add a rounded border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  margin-left: 700px;
+  margin-top: -70px;
+}
+
+/* Define hover effect for the university logo */
+.img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+/* country.css */
+
+/* Define styles for words in details */
+.city-details p {
+  color: #333; /* Default text color */
+  line-height: 1.6;
+}
+
+/* Style specific words or phrases */
+.city-details p strong {
+  color: #123252; /* Change color for strong words */
+  font-weight: bold; /* Ensure strong words are bold */
+}
+
+/* Add effects to enhance the appearance */
+.city-details p strong:hover {
+  text-decoration: underline; /* Underline strong words on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Add animation for eye-catching effects */
+.city-details p strong {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Style links to make them stand out */
+.city-details p a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove default underline */
+}
+
+.city-details p a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}

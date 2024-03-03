@@ -1,0 +1,158 @@
+.body {
+
+    background-color: #BCC9FD;
+
+}
+
+.contact-form {
+    background: #fff;
+   
+    margin-bottom: 5%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 14%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.btn-primary {
+    background-color: #123252;
+    border-color: #123252;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 12px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-footer {
+    border-radius: 0 0 20px 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.imag {
+
+    width: 70%;
+    margin-top: 10px;
+
+}
+
+.btnn {
+
+    margin-top: 20px
+}
+
+.pp {
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #0056b3;
+}
+
+.aaa {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+ /* Define styles for the container */
+.container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+    
+}
+
+/* Define styles for the heading */
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff; /* Adjust the color as needed */
+   margin-top: 20px;
+   margin-left: 300px;
+
+}
+
+/* Define styles for the university logo */
+.img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add a rounded border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+    margin-left: 700px;
+    margin-top: -100px;
+}
+
+/* Define hover effect for the university logo */
+.img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}

@@ -1,0 +1,62 @@
+/* styles.css */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background:  #001F3F;
+    ;
+    color: #fff;
+    text-align: right;
+    /* Right-to-Left for Arabic */
+  }
+  
+  .content {
+    transition: margin-left 0.5s;
+    margin-left: 0;
+    /* Adjust main content margin when sidebar is open */
+  }
+  
+  .content.open {
+    margin-left: 250px;
+    /* Show sidebar when open */
+  }
+  
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color:  #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-decoration: wavy;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    margin-right: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .logo:hover .subtitle {
+    display: block;
+  }
+  .subtitle {
+    display: none;
+    font-size: 14px;
+    color:  #FFD700;
+    margin-top: 5px;
+    white-space: nowrap;
+    margin-right: 40px; /* Add this line to keep the text in one line */
+  }
+  
+  .logo:hover {
+    color:  #FFD700;
+    /* Green color on hover */
+  }
+  .log:hover{
+  
+    color: #FFD700;
+  
+  }

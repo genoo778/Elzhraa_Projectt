@@ -1,0 +1,86 @@
+/* InstructionsPage.css */
+.instructions-container {
+    margin-top: 50px;
+}
+
+.instructions-container h1 {
+    color: #007bff;
+}
+
+.instructions-container p {
+    font-size: 18px;
+}
+
+.instructions-container form {
+    margin-top: 20px;
+}
+
+.instructions-container button {
+    margin-top: 20px;
+}
+/* Custom CSS for InstructionsPage buttons */
+.instructions-container {
+    padding: 20px;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    flex: 1;
+    margin: 0 px; /* Adjust the margin to create space between buttons */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #ddd;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.confirm-button {
+    background-color: #123252;
+    color: #fff;
+    border: none;
+}
+
+.confirm-button:hover {
+    background-color: #BCC9FD;
+}
+
+.add-button {
+    background-color: #123252;
+    color: #fff;
+    border: none;
+}
+
+.add-button:hover {
+    
+    background-color: #BCC9FD;
+}
+.edit-button{
+    background-color: #123252;
+    color: #fff;
+    border: none;
+
+}
+.edit-button:hover {
+    
+    background-color: #BCC9FD;
+}

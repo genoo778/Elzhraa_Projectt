@@ -1,0 +1,144 @@
+/* styles.css */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background:  #001F3F;
+  ;
+  color: #fff;
+  text-align: right;
+  /* Right-to-Left for Arabic */
+}
+
+.content {
+  transition: margin-left 0.5s;
+  margin-left: 0;
+  /* Adjust main content margin when sidebar is open */
+}
+
+.content.open {
+  margin-left: 250px;
+  /* Show sidebar when open */
+}
+
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color:  #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-decoration: wavy;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  margin-right: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo:hover .subtitle {
+  display: block;
+}
+.subtitle {
+  display: none;
+  font-size: 14px;
+  color:  #FFD700;
+  margin-top: 5px;
+  white-space: nowrap;
+  margin-right: 40px; /* Add this line to keep the text in one line */
+}
+
+.logo:hover {
+  color:  #FFD700;
+  /* Green color on hover */
+}
+.log:hover{
+
+  color: #FFD700;
+  
+
+}
+/* styles.css */
+/* styles.css */
+.container{
+  
+  margin-top: -50px;
+  
+}.inline-heading {
+  display: inline-block;
+  vertical-align: middle; /* Optional: Aligns the headings vertically */
+  margin-right: 10px; /* Optional: Adds space between headings and paragraphs */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-container p {
+  flex-basis: calc(25% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+}
+
+/* CSS Styles */
+.jumbotron {
+  background-color: #f8f9fa; /* Background color */
+  padding: 40px;
+}
+.jumbotron-container {
+  background-color: #BCC9FD;
+  min-height: calc(50vh - 120px); /* Adjust the height as per your requirement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-content {
+  /* Your jumbotron content styles */
+}
+
+/* Container for icon and text */
+.icon-text-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Individual icon and text item */
+.icon-text-item {
+  flex: 0 0 25%; /* Each item takes 25% of the width */
+  text-align: center;
+  margin-bottom: 40px; /* Added space between items */
+}
+
+/* Icon */
+.icon-text-item i {
+  font-size: 36px;
+  color: #123252; /* Blue color for icons */
+}
+
+/* Number (p) */
+.icon-text-item p:nth-child(1) {
+  font-size: 24px; /* Larger font size for numbers */
+  color: #123252; /* Blue color for numbers */
+  font-weight: bold; /* Make numbers bold */
+  margin-bottom: 10px; /* Added space between number and text */
+}
+
+/* Word (p) */
+.icon-text-item p:nth-child(2) {
+  font-size: 25px; /* Smaller font size for words */
+  color: #000000; /* Black color for words */
+  font-weight: bold;
+  margin-top: 10px; /* Make words bold */
+}
+.oo{
+  font-size: 18px; /* Smaller font size for words */
+  color: #000000; /* Black color for words */
+  font-weight: bold;
+  
+}

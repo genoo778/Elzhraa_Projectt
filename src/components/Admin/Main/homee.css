@@ -1,0 +1,67 @@
+.nav-button {
+    position: relative;
+  }
+  
+  .button-icon {
+    position: absolute;
+    top: -13px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav-button:hover {
+    background-color: white; /* Change the background color on hover */
+  }
+
+  .fantastic-button {
+    background-color: transparent;
+    border: none; /* Remove border */
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px; /* Adjust font size */
+    padding: 6px 12px; /* Adjust padding */
+    margin-bottom: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .fantastic-button:hover {
+    background-color: #FFD700;
+    color: #123252;
+    border-color: #123252;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  /* CSS for FontAwesome icons */
+
+
+.fantastic-button .fa-icon {
+  margin-left: 30px; /* Adjust spacing between icon and text */
+}
+.sidebar {
+  background-color: #123252; /* Background color of the sidebar */
+  width: 250px; /* Width of the sidebar */
+  padding: 20px; /* Padding around the content */
+}
+
+.sidebar h5 {
+  margin-right: 32px; /* Margin for the heading */
+  color: #fff; /* Color of the heading */
+}
+
+.sidebar .fantastic-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff; /* Color of the link text */
+}
+
+.sidebar .fantastic-button:hover {
+  background-color: #FFD700; 
+  transform: translateY(-2px);/* Background color of the link on hover */
+}
+.sidebar .fantastic-button .fa-icon {
+  margin-right: 15px; /* Increase spacing between icon and text */
+}
