@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Navbar, Nav  } from 'react-bootstrap';
-import { BrowserRouter, Link } from 'react-router-dom'
+import {  Link } from 'react-router-dom'
 import './homee.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -70,12 +70,20 @@ export default function Homee() {
             <Link to="/cr" className="fantastic-button">
                 <FontAwesomeIcon icon={faGlobe} /> البلاد
             </Link>
-            <Link to="/link10" className="fantastic-button">
+            <Link to="/u" className="fantastic-button">
                 <FontAwesomeIcon icon={faUser} /> المستخدمين
             </Link>
             <Link to="/link11" className="fantastic-button">
-                <FontAwesomeIcon icon={faMobile} /> تطبيقات الطلاب
-            </Link>
+        <FontAwesomeIcon icon={faMobile} /> تطبيقات الطلاب
+        <div className="additional-links">
+          <Link to="/na">تصحيح الرقم القومي </Link>
+          <Link to="/link2">تغير رقم الطالب</Link>
+          <Link to="/link3">الغاء قبول طالب </Link>
+          <Link to="/link4">تغير اسم الطالب</Link>
+          <Link to="/link5">نقب طالب من الجامعه</Link>
+          <Link to="/link5">تغير كلمه مرور الطالب</Link>
+        </div>
+      </Link>
             <Link to="/link12" className="fantastic-button">
                 <FontAwesomeIcon icon={faChartBar} /> احصاءيات عامه
             </Link>

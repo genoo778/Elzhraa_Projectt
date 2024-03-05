@@ -18,6 +18,8 @@ import Countrys from './components/Admin/pages/Countrys';
 import Rooms from './components/Admin/pages/Rooms';
 import Login from './components/outpages/home/Login';
 import Loginst from './components/Admin/Main/Loginst';
+import Users from './components/Admin/pages/Users';
+import NationalId from './components/Admin/pages/Studentapps/NationalId';
 
 
 
@@ -42,8 +44,8 @@ function App() {
       <Route path='/rs' element={<Rsoom/>}/>
       <Route path='/cr' element={<Countrys/>}/>
       <Route path='/ro' element={<Rooms/>}/>
-
-
+      <Route path='/u' element={<Users/>}/>
+      <Route path='/na' element={<NationalId/>}/>
 
     </Routes>
 

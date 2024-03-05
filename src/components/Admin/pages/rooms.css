@@ -1,0 +1,113 @@
+.room-container {
+  max-width: 1000px; /* Increased max-width */
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 60px; /* Increased padding */
+}
+
+.room-form {
+  max-width: 800px; /* Increased max-width */
+  margin: 0 auto;
+  padding: 40px; /* Increased padding */
+  background-color: #f9f9f9;
+  border-radius: 12px; /* Increased border radius */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+.room-select {
+  width: 100%;
+  padding: 10px; /* Decreased padding */
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px; /* Decreased font size */
+}
+
+.room-select option {
+  font-size: 16px; /* Decreased font size */
+}
+
+.room-form label {
+  font-size: 20px; /* Increased font size */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px; /* Increased margin-bottom */
+}
+
+.room-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 40px; /* Increased padding */
+  border: none;
+  border-radius: 12px; /* Increased border radius */
+  font-size: 20px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room-form button:hover {
+  background-color: #45a049;
+}
+
+.room-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.role-details {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.role-details h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.role-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.role-details p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px; /* Increased margin-top */
+}
+
+.room-table th,
+.room-table td {
+  border: 1px solid #ccc; /* Decreased border width */
+  padding: 10px; /* Decreased padding */
+  text-align: center;
+}
+
+.room-table th {
+  font-weight: bold;
+  color: #333;
+}
+
+.room-table td {
+  font-size: 14px; /* Decreased font size */
+  color: #666;
+}
+
+
+.room-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.room-table tr:hover {
+  background-color: #e0e0e0;
+}

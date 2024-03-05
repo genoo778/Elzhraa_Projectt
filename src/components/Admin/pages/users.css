@@ -1,0 +1,88 @@
+/* users.css */
+
+ 
+.containerrr {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.carddd {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carddd-body {
+  padding: 20px;
+}
+
+.custom-form-group {
+  margin-bottom: 10px;
+}
+
+.custom-form-control {
+  width: calc(100% - 80px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.custom-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* users.css */
+
+/* Search Bar Styles */
+/* users.css */
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+@media (max-width: 768px) {
+  .custom-form-control {
+    width: 100%;
+  }
+}

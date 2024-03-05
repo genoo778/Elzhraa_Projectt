@@ -65,3 +65,31 @@
 .sidebar .fantastic-button .fa-icon {
   margin-right: 15px; /* Increase spacing between icon and text */
 }
+.fantastic-button-container {
+  position: relative;
+}
+
+.additional-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.fantastic-button:hover .additional-links {
+  display: block;
+}
+
+.additional-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.additional-links a:hover {
+  background-color: #f0f0f0;
+}
