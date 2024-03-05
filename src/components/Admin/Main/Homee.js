@@ -77,11 +77,11 @@ export default function Homee() {
         <FontAwesomeIcon icon={faMobile} /> تطبيقات الطلاب
         <div className="additional-links">
           <Link to="/na">تصحيح الرقم القومي </Link>
-          <Link to="/link2">تغير رقم الطالب</Link>
-          <Link to="/link3">الغاء قبول طالب </Link>
-          <Link to="/link4">تغير اسم الطالب</Link>
+          <Link to="/st">تغير رقم الطالب</Link>
+          <Link to="/ca">الغاء قبول طالب </Link>
+          <Link to="/sn">تغير اسم الطالب</Link>
           <Link to="/link5">نقب طالب من الجامعه</Link>
-          <Link to="/link5">تغير كلمه مرور الطالب</Link>
+          <Link to="/sp">تغير كلمه مرور الطالب</Link>
         </div>
       </Link>
             <Link to="/link12" className="fantastic-button">

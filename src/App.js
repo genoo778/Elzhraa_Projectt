@@ -20,6 +20,10 @@ import Login from './components/outpages/home/Login';
 import Loginst from './components/Admin/Main/Loginst';
 import Users from './components/Admin/pages/Users';
 import NationalId from './components/Admin/pages/Studentapps/NationalId';
+import StudentNumber from './components/Admin/pages/Studentapps/StudentNumber';
+import StudentName from './components/Admin/pages/Studentapps/StudenName';
+import StudentPassword from './components/Admin/pages/Studentapps/StudentPassword';
+import CancelledForm from './components/Admin/pages/Studentapps/CancelledForm';
 
 
 
@@ -46,7 +50,10 @@ function App() {
       <Route path='/ro' element={<Rooms/>}/>
       <Route path='/u' element={<Users/>}/>
       <Route path='/na' element={<NationalId/>}/>
-
+      <Route path='/st' element={<StudentNumber/>}/>
+      <Route path='/sn' element={<StudentName/>}/>
+      <Route path='/sp' element={<StudentPassword/>}/>
+      <Route path='/ca' element={<CancelledForm/>}/>
     </Routes>
 
 
