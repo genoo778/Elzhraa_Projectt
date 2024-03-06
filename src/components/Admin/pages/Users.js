@@ -51,7 +51,7 @@ function App() {
               </div>
               <div className="custom-form-group">
                 <button type="button" className="custom-btn btn-primary" onClick={handleAddButtonClick}>
-                  {isLoading ? 'Loading...' : 'Add'}
+                  {isLoading ? 'Loading...' : 'بحث'}
                 </button>
               </div>
               {showSearch && (
