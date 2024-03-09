@@ -498,39 +498,40 @@ const SignupForm = () => {
                             {/* ... (previous form fields) ... */}
 
                             {/* سكن بدون تغذية */}
-                            <Col md={6} className="mb-4">
+                            <Col md={6} className="mb-4 d-flex align-items-center">
                               <Form.Check
                                 type="checkbox"
                                 id="housingWithoutMeals"
-                                label="سكن بدون تغذية"
                                 name="housingWithoutMeals"
                                 checked={formData.housingWithoutMeals}
                                 onChange={handleChange}
+                                className="mr-2"
                               />
+                              <Form.Label htmlFor="housingWithoutMeals">سكن بدون تغذية</Form.Label>
                             </Col>
 
-                            {/* الأسرة بالخارج */}
-                            <Col md={6} className="mb-4">
+                            <Col md={6} className="mb-6 d-flex align-items-center">
                               <Form.Check
                                 type="checkbox"
                                 id="familyAbroad"
-                                label="الأسرة بالخارج"
                                 name="familyAbroad"
                                 checked={formData.familyAbroad}
                                 onChange={handleChange}
+                                className="mr-2"
                               />
+                              <Form.Label htmlFor="familyAbroad">الأسرة بالخارج</Form.Label>
                             </Col>
 
-                            {/* ذوى احتياجات خاصة */}
-                            <Col md={6} className="mb-4">
+                            <Col md={6} className="mb-4 d-flex align-items-center">
                               <Form.Check
                                 type="checkbox"
                                 id="specialNeeds"
-                                label="ذوى احتياجات خاصة"
                                 name="specialNeeds"
                                 checked={formData.specialNeeds}
                                 onChange={handleChange}
+                                className="mr-2"
                               />
+                              <Form.Label htmlFor="specialNeeds">ذوى احتياجات خاصة</Form.Label>
                             </Col>
 
                             {/* ... (continue with other form fields) ... */}
@@ -861,7 +862,7 @@ const SignupForm = () => {
                             {/* ... (previous form fields) ... */}
 
                             {/* سكن بدون تغذية */}
-                            <Col md={6} className="mb-4">
+                            <Col md={6} className="mb-4 d-flex align-items-center">
                               <Form.Check
                                 type="checkbox"
                                 id="housingWithoutMeals"

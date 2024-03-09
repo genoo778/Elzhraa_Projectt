@@ -2,8 +2,8 @@ import React from 'react';
 
 const Loginst = () => {
     return (
-    
-    <section className="h-100 h-custom" style={{ background: '#BCC9FD' }} dir="rtl">
+
+        <section className="h-100 h-custom" style={{ background: '#BCC9FD' }} dir="rtl">
             <div className="container py-5 h-100">
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-lg-8 col-xl-6">
@@ -17,7 +17,7 @@ const Loginst = () => {
                             <div className="card-body p-4 p-md-5">
                                 <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style={{ marginTop: "-20px", color: '#235787', marginRight: "30px" }}>
                                     الزهراء لإدارة المدن الجامعية<br />
-                               
+
                                 </h3>
                                 <form className="px-md-2" style={{ marginTop: '-30px' }}>
                                     <div className="form-outline mb-4 bold">
@@ -34,11 +34,14 @@ const Loginst = () => {
                                     </div>
 
 
-                                    <button type="button" class="btn btn-primary btn-lg btn-block " style={{ background: ' #235787' }} dir="rtl"><a href="/h" style={{color:'white',textDecorationLine:'none'}}>دخول</a></button>
+                                    <button type="button" className="custom-button" dir="rtl">
+                                        <a href="/h">دخول</a>
+                                    </button>
 
-                                
-                                  
-                              
+
+
+
+
 
 
 

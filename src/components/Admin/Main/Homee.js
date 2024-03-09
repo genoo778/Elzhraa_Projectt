@@ -57,7 +57,7 @@ export default function Homee() {
             <Link to="/ct" className="fantastic-button">
                 <FontAwesomeIcon icon={faHome} /> انواع السكن المميز
             </Link>
-            <Link to="/link5" className="fantastic-button">
+            <Link to="/me" className="fantastic-button">
                 <FontAwesomeIcon icon={faUtensils} /> الوجبات
             </Link>
             <Link to="/rs" className="fantastic-button">
@@ -87,7 +87,7 @@ export default function Homee() {
             <Link to="/link12" className="fantastic-button">
                 <FontAwesomeIcon icon={faChartBar} /> احصاءيات عامه
             </Link>
-            <Link to="/link13" className="fantastic-button">
+            <Link to="/re" className="fantastic-button">
                 <FontAwesomeIcon icon={faFileAlt} /> تقارير
             </Link>
         </Nav>

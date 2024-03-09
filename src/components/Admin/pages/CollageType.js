@@ -90,7 +90,7 @@ function YourComponent() {
       <Share />
       <div className="col-lg-11">
         <div className={`card shadow-lg p-5 mb-5 bg-body rounded border-0`}>
-        <div style={{ backgroundColor: '#123252', padding: '20px', width: '117%', marginTop: '-48px', marginRight: '-48px' }}>
+        <div style={{ backgroundColor: '#123252', padding: '20px', width: '117%', marginTop: '-40px', marginRight: '-48px' }}>
               <h1 style={{ marginRight: '100px' }}>السكن - جامعة حلوان</h1>
               <img src="https://th.bing.com/th/id/OIP.wscXCxEte7OAsOtvrQo_tAHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Helwan University Logo" className='img' />
             </div>

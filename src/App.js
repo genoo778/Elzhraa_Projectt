@@ -24,6 +24,8 @@ import StudentNumber from './components/Admin/pages/Studentapps/StudentNumber';
 import StudentName from './components/Admin/pages/Studentapps/StudenName';
 import StudentPassword from './components/Admin/pages/Studentapps/StudentPassword';
 import CancelledForm from './components/Admin/pages/Studentapps/CancelledForm';
+import Reports from './components/Admin/pages/Reports/Reports';
+import Melas from './components/Admin/pages/Melas';
 
 
 
@@ -54,6 +56,8 @@ function App() {
       <Route path='/sn' element={<StudentName/>}/>
       <Route path='/sp' element={<StudentPassword/>}/>
       <Route path='/ca' element={<CancelledForm/>}/>
+      <Route path='/re' element={<Reports/>}/>
+      <Route path='/me' element={<Melas/>}/>
     </Routes>
 
 
