@@ -26,6 +26,15 @@ import StudentPassword from './components/Admin/pages/Studentapps/StudentPasswor
 import CancelledForm from './components/Admin/pages/Studentapps/CancelledForm';
 import Reports from './components/Admin/pages/Reports/Reports';
 import Melas from './components/Admin/pages/Melas';
+import Info from './components/User/Info';
+import Sakan from './components/User/Sakan';
+import Fasll from './components/User/Fasll';
+import Gazaat from './components/User/Gazaat';
+import Rsom from './components/User/Rsom';
+import Tasreh from './components/User/Tasreh';
+import Bayan1 from './components/User/Bayan1';
+import Bayan2 from './components/User/Bayan2';
+import Wagabat from './components/User/Wagabat';
 
 
 
@@ -58,6 +67,15 @@ function App() {
       <Route path='/ca' element={<CancelledForm/>}/>
       <Route path='/re' element={<Reports/>}/>
       <Route path='/me' element={<Melas/>}/>
+      <Route path='/if' element={<Info/>}/>
+      <Route path='/sk' element={<Sakan/>}/>
+      <Route path='/fl' element={<Fasll/>}/>
+      <Route path='/ga' element={<Gazaat/>}/>
+      <Route path='/rm' element={<Rsom/>}/>
+      <Route path='/tr' element={<Tasreh/>}/>
+      <Route path='/by' element={<Bayan1/>}/>
+      <Route path='/byy' element={<Bayan2/>}/>
+      <Route path='/wa' element={<Wagabat/>}/>
     </Routes>
 
 

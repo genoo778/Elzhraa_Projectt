@@ -26,19 +26,58 @@ export default function Homee() {
   const renderSidebar = () => {
     switch (selectedButton) {
       case 'boy-user':
-        return (
-          <div className="sidebar">
-            <h3>بيانات الطلاب</h3>
+        case 'girl-user':
+          return (
+            <div className="sidebar" style={{color:'white'}}>
+              {selectedButton === 'boy-user' ? (
+                <h5 style={{marginRight:'10px'}}>بيانات الطلاب</h5>
+              ) : (
+                <h5 style={{marginRight:'10px'}}>بيانات الطالبات</h5>
+              )}
+              
+            <Nav className="flex-column" style={{textAlign:'center'}}>
+            <Link to="/if" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} />البيانات الأساسيه
+            </Link>
+            <Link to="/sk" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} />السكن
+            </Link>
+            <Link to="/fl" className="fantastic-button">
+                <FontAwesomeIcon icon={faUniversity} /> فصل الطلاب
+            </Link>
+            <Link to="/ga" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} /> الجزاءات
+            </Link>
+            <Link to="/tr" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} /> الغياب والتصاريح
+            </Link>
+            <Link to="/rm" className="fantastic-button">
+                <FontAwesomeIcon icon={faMoneyBill} /> الرسوم
+            </Link>
+            <Link to="/by" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} /> ابيان حاله
+            </Link>
+            
+            <Link to="/byy" className="fantastic-button">
+                <FontAwesomeIcon icon={faGlobe} /> بيان بالرسوم
+            </Link>
+            <Link to="/wa" className="fantastic-button">
+                <FontAwesomeIcon icon={faHome} /> حجب وجبات 
+            </Link>
+            <Link to="/" className="fantastic-button">
+                <FontAwesomeIcon icon={faChartBar} /> تطبيقات
+            </Link>
+     
+            <Link to="/" className="fantastic-button">
+                <FontAwesomeIcon icon={faChartBar} /> احصاءيات عامه
+            </Link>
+            <Link to="/" className="fantastic-button">
+                <FontAwesomeIcon icon={faFileAlt} /> تقارير
+            </Link>
+        </Nav>
 
-          </div>
-        );
-      case 'girl-user':
-        return (
-          <div className="sidebar">
-            <h3>بيانات الطالبات</h3>
-            {/* Add Girl User specific content here */}
-          </div>
-        );
+            </div>
+          );
       case 'admin':
         return (
           <div className="sidebar" style={{color:'white'}}>

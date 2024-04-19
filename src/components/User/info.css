@@ -1,0 +1,114 @@
+/* Styles for the card container */
+.widget-right {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.style1{
+margin-top: 12px;
+font-size: 25px;
+}
+.style2{
+
+    font-size: 25px;
+    margin-top: 11px;
+    }
+    .style3{
+
+        font-size: 25px;
+        margin-top: 10px;
+        }
+        .style4{
+
+            font-size: 25px;
+            margin-top: 10px;
+            }
+/* Styles for the window header */
+.window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.window-header1 .icon2 {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.window-title {
+    font-size: 20px;
+    font-weight: bold;
+  margin-right: 100px;
+  color: #f9f9f9;
+}
+
+.window-header1 .icon {
+    font-size: 17px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Styles for the select dropdowns */
+.select-container {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 8px; /* Adjusted padding */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px; /* Smaller font size */
+    outline: none;
+}
+
+/* Styles for radio buttons and checkboxes */
+.radio-container,
+.checkbox-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px; /* Smaller font size */
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+/* Styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px; /* Adjusted padding */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Smaller font size */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    margin-left: 12px; /* Added margin for space */
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+
+}
