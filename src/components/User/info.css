@@ -9,21 +9,21 @@
 }
 .style1{
 margin-top: 12px;
-font-size: 25px;
+font-size: 20px;
 }
 .style2{
 
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 11px;
     }
     .style3{
 
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 10px;
         }
         .style4{
 
-            font-size: 25px;
+            font-size: 20px;
             margin-top: 10px;
             }
 /* Styles for the window header */
@@ -71,44 +71,50 @@ select {
 /* Styles for radio buttons and checkboxes */
 .radio-container,
 .checkbox-container {
-    margin-bottom: 20px;
+    display: inline;
+  
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 14px; /* Smaller font size */
+.radio-container label,
+.checkbox-container label {
+    display: inline;
+    
 }
 
-input[type='radio'],
-input[type='checkbox'] {
-    margin-right: 10px;
+.radio-container input[type='radio'],
+.checkbox-container input[type='checkbox'] {
+    margin-right: 5px; /* Adjust spacing between radio buttons/checkboxes and labels */
 }
+
+
 
 /* Styles for the search bar */
 .search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 16px;
+    width: 70%;
+    margin-top: 10px;
+
 }
 
 .search-bar input[type="text"] {
     flex: 1;
-    padding: 8px; /* Adjusted padding */
+    padding: 6px; /* Adjusted padding for smaller input */
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 14px; /* Smaller font size */
+    font-size: 12px; /* Smaller font size */
     outline: none;
 }
 
 .search-bar button {
-    padding: 8px 12px;
-    margin-left: 12px; /* Added margin for space */
+    padding: 4px 10px; /* Adjusted padding */
+    margin-left: -16px; /* Added margin for space */
     background-color: #007bff;
     border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
     margin-top: 3px;
-
 }

@@ -54,7 +54,24 @@ const Info = () => {
       setIsLoading(false); // Set loading back to false after fetching data
     }, 2000); // Simulate loading time of 2 seconds
   };
-
+  // const handleSearch = async () => {
+  //   setIsLoading(true); // Set loading to true
+  //   try {
+  //     // Make HTTP POST request to backend API
+  //     const response = await axios.post("http://your-backend-api/search", {
+  //       // Pass search criteria to backend
+  //       selectedOption1,
+  //       selectedOption2,
+  //       selectedOptions,
+  //     });
+  //     // Update student information state with response data
+  //     setStudentInfo(response.data);
+  //     setIsLoading(false); // Set loading back to false after fetching data
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //     setIsLoading(false); // Set loading back to false in case of error
+  //   }
+  // };
   return(
           <>
           <Share/>
@@ -67,7 +84,7 @@ const Info = () => {
       <div>
       <h2 class="style1">العام الأكاديمي</h2>
       <select value={selectedOption1} onChange={handleChange1}>
-        <option value="">Choose</option>
+        <option value="">اختر</option>
         <option value="option1">2020/2021</option>
         <option value="option2"> 2021/2022</option>
         <option value="option3">2022/2023</option>
@@ -80,7 +97,7 @@ const Info = () => {
     <div>
       <h2 class="style2"> الكلية</h2>
       <select class="lara1" value={selectedOption2} onChange={handleChange2}>
-        <option value="">Choose</option>
+        <option value="">اختر</option>
         <option value="option1">حاسبات ومعلومات </option>
         <option value="option2"> اداب</option>
         <option value="option3">علوم</option>
@@ -93,156 +110,49 @@ const Info = () => {
     </div>
 
     <div>
-      <h2 class="style3">بيانات الجدد</h2>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="group1"
-            value="option1"
-            checked={selectedOptions.group1 === "option1"}
-            onChange={handleChange}
-          />
-          طلاب الجامعة
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="group1"
-            value="option2"
-            checked={selectedOptions.group1 === "option2"}
-            onChange={handleChange}
-          />
-          من خارج الجامعة
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="group2"
-            value="option1"
-            checked={selectedOptions.group2 === "option1"}
-            onChange={handleChange}
-          />
-         مصري
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="group2"
-            value="option2"
-            checked={selectedOptions.group2 === "option2"}
-            onChange={handleChange}
-          />
-          وافد من الخارج
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="group3"
-            value="option1"
-            checked={selectedOptions.group3 === "option1"}
-            onChange={handleChange}
-          />
-          متقدمين
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="group3"
-            value="option2"
-            checked={selectedOptions.group3 === "option2"}
-            onChange={handleChange}
-          />
-          محولين
-        </label>
-      </div>
-    </div>
+  <h2 class="style3">بيانات الجدد</h2>
+  <div>
+    <select value={selectedOptions.group1} onChange={handleChange}>
+      <option value="">اختر</option>
+      <option value="option1">طلاب الجامعة</option>
+      <option value="option1">مصري</option>
+      <option value="option2">وافد من الخارج</option>
+      <option value="option2">من خارج الجامعة</option>
+      <option value="option1">متقدمين</option>
+      <option value="option2">محولين</option>
+    </select>
+  </div>
+  
+</div>
+
     <div>
-      <h2 class="style4">بيانات السكن </h2>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            value="option1"
-            checked={selectedOptions.group1 === "option1"}
-            onChange={(e) => handleCheckboxChange(e, "group1")}
-          />
-          قدامي
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            value="option2"
-            checked={selectedOptions.group1 === "option2"}
-            onChange={(e) => handleCheckboxChange(e, "group1")}
-          />
-          جدد
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            value="option1"
-            checked={selectedOptions.group2 === "option1"}
-            onChange={(e) => handleCheckboxChange(e, "group2")}
-          />
-          سكن عادي
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            value="option2"
-            checked={selectedOptions.group2 === "option2"}
-            onChange={(e) => handleCheckboxChange(e, "group2")}
-          />
-          سكن مميز
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            value="option1"
-            checked={selectedOptions.group3 === "option1"}
-            onChange={(e) => handleCheckboxChange(e, "group3")}
-          />
-          ساكنين
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            value="option2"
-            checked={selectedOptions.group3 === "option2"}
-            onChange={(e) => handleCheckboxChange(e, "group3")}
-          />
-          غير ساكنين
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            value="option3"
-            checked={selectedOptions.group3 === "option3"}
-            onChange={(e) => handleCheckboxChange(e, "group3")}
-          />
-          إخلاء
-        </label>
-        <div className="search-bar">
-            <input type="text" placeholder="Search..." />
-            <button onClick={handleSearch}>
-              {isLoading ? (
-                <i className="fas fa-spinner fa-spin"></i>
-              ) : (
-                <i className="fas fa-search"></i>
-              )}
-            </button>
-          </div>
-      </div>
-    </div>    
+  <h2 class="style4">بيانات السكن </h2>
+  <div class="select-options">
+    <select value={selectedOptions.group1} onChange={(e) => handleChange(e, "group1")}>
+      <option value="">اختر...</option>
+      <option value="option1">قدامي</option>
+      <option value="option2">جدد</option>
+      <option value="option1">ساكنين</option>
+      <option value="option2">غير ساكنين</option>
+      <option value="option3">إخلاء</option>
+      <option value="option1">سكن عادي</option>
+      <option value="option2">سكن مميز</option>
+    </select>
+   
+  </div>
+  <div className="search-bar">
+    <input type="text" placeholder="Search..." />
+    <button onClick={handleSearch}>
+      {isLoading ? (
+        <i className="fas fa-spinner fa-spin"></i>
+      ) : (
+        <i className="fas fa-search"></i>
+      )}
+    </button>
+  </div>
+</div>
+
+   
     {studentInfo && (
           <div>
             <h3>Student Information</h3>
