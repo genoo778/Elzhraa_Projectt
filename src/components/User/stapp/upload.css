@@ -1,0 +1,88 @@
+/* Right_block.css */
+
+.widget-right1111 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; /* Decreased padding */
+    margin-bottom: 15px; /* Decreased margin */
+    background-color: #f9f9f9;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px; /* Decreased padding */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px; /* Decreased margin */
+  }
+  
+  .window-title {
+    font-size: 16px; /* Decreased font size */
+    font-weight: bold;
+  }
+  
+  .qaz, .wsx1 {
+    margin-bottom: 8px; /* Decreased margin */
+    font-size: 14px; /* Decreased font size */
+    font-weight: bold;
+  }
+  
+  .search-bar55 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Decreased margin */
+  }
+  
+  .search-bar55 input[type="text"] {
+    padding: 6px; /* Decreased padding */
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Decreased border radius */
+    flex-grow: 1;
+  }
+  
+  .search-bar55 button {
+    padding: 4px 8px; /* Decreased padding */
+    border: none;
+    border-radius: 3px; /* Decreased border radius */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 6px; /* Decreased margin */
+  }
+  
+  .search-bar55 button:hover {
+    background-color: #0056b3;
+  }
+  
+  .widget-left1111 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; /* Decreased padding */
+    background-color: #f9f9f9;
+    margin-bottom: 15px; /* Decreased margin */
+  }
+  
+  .boom {
+    list-style-type: none;
+    padding-left: 16px; /* Decreased padding */
+  }
+  
+  .boom li {
+    margin-bottom: 8px; /* Decreased margin */
+    font-size: 12px; /* Decreased font size */
+  }
+  
+  .icon2, .icon {
+    font-size: 20px; /* Decreased font size */
+    margin-right: 8px; /* Decreased margin */
+  }
+  
+  .icon21, .icon31 {
+    font-size: 16px; /* Decreased font size */
+    margin-right: 8px; /* Decreased margin */
+  }
+  

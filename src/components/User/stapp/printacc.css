@@ -1,0 +1,53 @@
+/* Right_block.css */
+
+.widget-right1313 {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .window-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .first {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .second {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .window-title {
+      font-size: 16px;
+    }
+  
+    .second {
+      margin-left: 10px;
+    }
+  }
+  

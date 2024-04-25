@@ -1,0 +1,73 @@
+/* gazzaa.css */
+
+/* Main container */
+.widget-right33 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  width: 60%;
+  margin-right: 280px;
+  margin-top: 27px;
+}
+
+/* Window header */
+.window-header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.window-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Dropdown styles */
+.lara1 {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Input styles */
+input[type="date"],
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List styles */
+.moon {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.moon li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}

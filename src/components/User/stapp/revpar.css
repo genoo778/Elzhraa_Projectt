@@ -1,0 +1,76 @@
+/* Container styles */
+.widget-right17 {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  /* Header styles */
+  .window-header1 {
+  
+    color: #fff;
+    padding: 10px;
+  }
+  .window-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* Dropdown and input styles */
+  .select-dropdown, input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Search bar styles */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Content styles */
+  .style7, .widget-left {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* List styles */
+  .beka {
+    padding-left: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .widget-right17, .style7, .widget-left {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    /* Additional styles as needed */
+  }
+  

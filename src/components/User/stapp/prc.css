@@ -1,0 +1,84 @@
+.widget-right10 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .icon2 {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .window-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .vbn1 {
+    margin-bottom: 15px;
+  }
+  
+  .style11122,
+  .style2221 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .lara1 {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-bar1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  
+  .button-bar2 {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

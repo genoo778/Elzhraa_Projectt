@@ -1,0 +1,75 @@
+/* Right_block.css */
+
+/* Widget container */
+.widget-right {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  /* Window header */
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .window-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Dropdowns */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Text input */
+  .we {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Links */
+  .text a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Ordered list */
+  ol {
+    padding-left: 20px;
+  }
+  
+  /* List items */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .widget-left {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  

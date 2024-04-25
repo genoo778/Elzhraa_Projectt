@@ -1,0 +1,99 @@
+/* Right_block.css */
+
+/* Widget container */
+.widget-right55 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Window header */
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* Window title */
+  .window-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Dropdown and input styling */
+  select,
+  input[type="text"],
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Checkbox label */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Search button */
+  .search-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Search container */
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search label */
+  .search-label {
+    margin-right: 10px;
+  }
+  
+  /* Styles for different sections */
+  .style1123,
+  .style2234,
+  .style2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Checkbox container */
+  .df {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Checkbox container with multiple checkboxes */
+  .cf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* Additional styles can be added as needed */
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  

@@ -93,3 +93,11 @@
 .additional-links a:hover {
   background-color: #f0f0f0;
 }
+.link-group {
+  display: flex;
+  margin-right: 10px; /* Adjust spacing between groups */
+}
+
+.link-group > a {
+  margin-right: 10px; /* Adjust spacing between links within a group */
+}

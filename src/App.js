@@ -35,6 +35,25 @@ import Tasreh from './components/User/Tasreh';
 import Bayan1 from './components/User/Bayan1';
 import Bayan2 from './components/User/Bayan2';
 import Wagabat from './components/User/Wagabat';
+import Uploadphoto from './components/User/stapp/Uploadphoto';
+import Tasrehall from './components/User/stapp/Tasrehall';
+import Gazaall from './components/User/stapp/Gazaall';
+import Removephoto from './components/User/stapp/Removphoto';
+import Faslall from './components/User/stapp/Faslall';
+import Tanseq from './components/User/stapp/Tanseq';
+import Checktalabat from './components/User/stapp/Checktalabat';
+import Reversation from './components/User/stapp/Reversation';
+import Returnprint from './components/User/stapp/Returnprint';
+import Accept from './components/User/stapp/Accept';
+import Printcard from './components/User/stapp/Printcard';
+import Changesakan from './components/User/stapp/Changesakan';
+import Printaccept from './components/User/stapp/Printaccept';
+import Returnacc from './components/User/stapp/Returnacc';
+import Takewagba from './components/User/stapp/Takewagba.js';
+import Takepar from './components/User/stapp/Takepar.js';
+import Revservaationpar from './components/User/stapp/Revservaationpar.js.js';
+
+
 
 
 
@@ -76,6 +95,23 @@ function App() {
       <Route path='/by' element={<Bayan1/>}/>
       <Route path='/byy' element={<Bayan2/>}/>
       <Route path='/wa' element={<Wagabat/>}/>
+      <Route path='/up' element={<Uploadphoto/>}/>
+      <Route path='/ta' element={<Tasrehall/>}/>
+      <Route path='/gal' element={<Gazaall/>}/>
+      <Route path='/rem' element={<Removephoto/>}/>
+      <Route path='/fas' element={<Faslall/>}/>
+      <Route path='/tan' element={<Tanseq/>}/>
+      <Route path='/che' element={<Checktalabat/>}/>
+      <Route path='/rev' element={<Reversation/>}/>
+      <Route path='/ret' element={<Returnprint/>}/>
+      <Route path='/acc' element={<Accept/>}/>
+      <Route path='/prc' element={<Printcard/>}/>
+      <Route path='/chs' element={<Changesakan/>}/>
+      <Route path='/praa' element={<Printaccept/>}/>
+      <Route path='/rea' element={<Returnacc/>}/>
+      <Route path='/taw' element={<Takewagba/>}/>
+      <Route path='/tap' element={<Takepar/>}/>
+      <Route path='/rep' element={<Revservaationpar/>}/>
     </Routes>
 
 

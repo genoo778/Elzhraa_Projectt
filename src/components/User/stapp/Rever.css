@@ -1,0 +1,99 @@
+/* Right_block.css */
+
+/* Styling for the window widget */
+.widget-right1088 {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  /* Styling for the window header */
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .window-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .icon2,
+  .icon {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  /* Styling for the select dropdowns */
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Styling for the date input */
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Styling for the search bar */
+  .search-bar8 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar8 input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .search-bar8 button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-bar8 button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles can be added as needed */
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .widget-right1088 {
+      padding: 15px;
+    }
+    .window-title {
+      font-size: 20px;
+    }
+    /* Adjust other styles for smaller screens */
+  }
+  

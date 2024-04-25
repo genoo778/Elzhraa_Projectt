@@ -1,0 +1,73 @@
+/* Tasrehall.css */
+
+.widget-right222 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: 60%;
+    margin-right: 280px;
+    margin-top: 27px;
+  }
+  
+  .window-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .window-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .style2, .style1111, .style7, .style7334 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .lara1,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"],
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  select:focus,
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
