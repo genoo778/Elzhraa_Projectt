@@ -110,6 +110,37 @@ export default function Homee() {
               </Link>
               <Link to="/" className="fantastic-button">
                 <FontAwesomeIcon icon={faFileAlt} /> تقارير
+                <div className="additional-links">
+                  <div>
+                  <div className="link-group">
+                    <Link to="/r1">قوائم الطلاب</Link>
+                    <Link to="/r2">الجزاءات </Link>
+                    <Link to="/r3">الغياب و التصاريح </Link>
+                  </div>
+                  <div className="link-group">
+                    <Link to="/r4"> الرسوم </Link>
+                    <Link to="/r5">حالة الغرف </Link>
+                    <Link to="/r6"> البطاقات المطبعة</Link>
+                    <Link to="/7">طلاب بدون صور </Link>
+                  </div>
+                  <div className="link-group">
+                    <Link to="/r8"> وجبات الطلاب  </Link>
+                    <Link to="/r9">قوائم البحث الاجتماع</Link>
+                    <Link to="/r10">امر تسكين </Link>
+                    <Link to="/r11">المحرومين الوجبات</Link>
+                  </div>
+              
+                  <div className="link-group">
+                    <Link to="/r12">الطلاب المفصولين </Link>
+                    <Link to="/r13">اخطار بالقبول </Link>
+                    <Link to="/r14">بيان استلام الوجبات</Link>
+
+                  </div>
+              
+
+       
+                  </div>
+                </div>
               </Link>
             </Nav>
 

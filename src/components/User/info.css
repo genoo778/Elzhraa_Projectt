@@ -39,7 +39,7 @@ font-size: 20px;
     margin-right: 10px;
 }
 
-.window-title {
+.window-titlee {
     font-size: 20px;
     font-weight: bold;
   margin-right: 100px;
@@ -48,7 +48,7 @@ font-size: 20px;
 
 .window-header1 .icon {
     font-size: 17px;
-    color: #333;
+    color: white;
     cursor: pointer;
 }
 

@@ -52,6 +52,20 @@ import Returnacc from './components/User/stapp/Returnacc';
 import Takewagba from './components/User/stapp/Takewagba.js';
 import Takepar from './components/User/stapp/Takepar.js';
 import Revservaationpar from './components/User/stapp/Revservaationpar.js.js';
+import Report1 from './components/User/Reports/Report1.js';
+import Report2 from './components/User/Reports/Report2.js';
+import Report3 from './components/User/Reports/Report3.js';
+import Report4 from './components/User/Reports/Report4.js';
+import Report5 from './components/User/Reports/Report5.js';
+import Report6 from './components/User/Reports/Report6.js';
+import Report7 from './components/User/Reports/Report7.js';
+import Report8 from './components/User/Reports/Report8.js';
+import Report9 from './components/User/Reports/Report9.js';
+import Report10 from './components/User/Reports/Report10.js';
+import Report11 from './components/User/Reports/Report11.js';
+import Report12 from './components/User/Reports/Report12.js';
+import Report13 from './components/User/Reports/Report13.js';
+import Report14 from './components/User/Reports/Report14.js';
 
 
 
@@ -112,6 +126,21 @@ function App() {
       <Route path='/taw' element={<Takewagba/>}/>
       <Route path='/tap' element={<Takepar/>}/>
       <Route path='/rep' element={<Revservaationpar/>}/>
+
+      <Route path='/r1' element={<Report1/>}/>
+      <Route path='/r2' element={<Report2/>}/>
+      <Route path='/r3' element={<Report3/>}/>
+      <Route path='/r4' element={<Report4/>}/>
+      <Route path='/r5' element={<Report5/>}/>
+      <Route path='/r6' element={<Report6/>}/>
+      <Route path='/r7' element={<Report7/>}/>
+      <Route path='/r8' element={<Report8/>}/>
+      <Route path='/r9' element={<Report9/>}/>
+      <Route path='/r10' element={<Report10/>}/>
+      <Route path='/r11' element={<Report11/>}/>
+      <Route path='/r12' element={<Report12/>}/>
+      <Route path='/r13' element={<Report13/>}/>
+      <Route path='/r14' element={<Report14/>}/>
     </Routes>
 
 

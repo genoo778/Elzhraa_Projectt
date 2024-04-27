@@ -51,7 +51,7 @@ const Bayan1= () => {
           <Share/>
           <div className="widget-right window-widget">
     <div style={{ backgroundColor: '#123252', padding: '20px', width: '107%' , marginTop:'-20px',marginRight:'-20px' }}>
-    <span className="window-title">بيان حالة-جامعه حلوان</span>
+    <span className="window-titlee">بيان حالة-جامعه حلوان</span>
           <img src="https://th.bing.com/th/id/OIP.wscXCxEte7OAsOtvrQo_tAHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Helwan University Logo" className='img' />
         </div>
       <div>

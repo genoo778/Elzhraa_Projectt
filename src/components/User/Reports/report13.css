@@ -1,0 +1,96 @@
+.widget-right1113 {
+  margin-left: 10px;
+  /* Adjust the width as per your requirement */
+  /* Adjust the height as per your requirement */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 60%;
+  margin-right: 280px;
+  margin-top: 27px;
+          
+        }
+        /* WindowWidget.css */
+        
+        .window-widget {
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .icon{
+          margin-left: 10px;
+        }
+        .icon2{
+          margin-right: 350px; ;
+        }
+        
+        .window-header1 {
+ 
+          color: #fff;
+          padding: 8px;
+          text-align: center;
+
+          
+          cursor: move; /* Add this if you want the window to be draggable */
+        }
+        
+        .window-title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        
+        .window-content {
+          padding: 16px;
+        }
+        .style1{
+          margin-left: 20pc;
+          margin-top: 1cm;
+        }
+        .search-bar input[type="text"] {
+          margin-left: 2cm;
+          width: 60%;
+          padding: 8px; /* Decreased padding */
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          background-color: #fff;
+          color: #333;
+          font-size: 14px; /* Smaller font size */
+        }
+        
+        .search-bar button {
+          margin-top: 1cm;
+          margin-bottom: 1cm;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 8px 12px; /* Decreased padding */
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: 8px; /* Decreased margin */
+        }
+        
+        .search-bar button:hover {
+          background-color: #0056b3;
+        }
+        
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 10px; /* Adjust the gap as needed */
+          margin-top: 20px; /* Add margin for spacing from the form */
+        }
+        
+        .button-container button {
+          padding: 10px 20px;
+          background-color: #007bff; /* Adjust the background color */
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+        .button-container button:hover {
+          background-color: #0056b3; /* Adjust hover color */
+        }
