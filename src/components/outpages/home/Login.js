@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+import axios from 'axios'; // Import Axios for making HTTP requests
 import "./login.css";
 
 const Login = () => {
@@ -7,14 +8,15 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    // Perform authentication logic here
-    if (username.trim() === 'genoo' && password.trim() === 'gen') {
-      // If authentication is successful, you can redirect the user to another page
-      window.location.href = '/hh';
-    } else {
+    try {
+      const response = await axios.post('http://your-backend-url/api/login', { username, password });
+      // Handle successful authentication (e.g., set user session, redirect)
+      console.log(response.data); // Log the response from the backend
+      window.location.href = '/hh'; // Redirect to another page on success
+    } catch (error) {
       setError('Invalid username or password');
     }
   };

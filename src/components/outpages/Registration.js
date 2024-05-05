@@ -906,3 +906,27 @@ const SignupForm = () => {
 };
 
 export default SignupForm;
+
+
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   try {
+//     const response = await axios.post('http://your-backend-url/signup', formData);
+//     console.log('Form submitted successfully:', response.data);
+//     // Add any additional logic here (e.g., show success message, redirect)
+//   } catch (error) {
+//     console.error('Error submitting form:', error);
+//     // Handle error (e.g., show error message to user)
+//   }
+// };
+
+// const handleToggleForm = async () => {
+//   try {
+//     const response = await axios.put('http://your-backend-url/toggle-form/:id', { id: 'your-record-id' });
+//     console.log('Form toggled successfully:', response.data);
+//     // Update state or perform any actions based on the response
+//   } catch (error) {
+//     console.error('Error toggling form:', error);
+//     // Handle error (e.g., show error message to user)
+//   }
+// };

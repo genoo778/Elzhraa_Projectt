@@ -1,11 +1,11 @@
-.room-container {
+.room-containerr {
   max-width: 1000px; /* Increased max-width */
   margin: 0 auto;
   margin-top: 80px;
   padding: 60px; /* Increased padding */
 }
 
-.room-form {
+.room-formm {
   max-width: 800px; /* Increased max-width */
   margin: 0 auto;
   padding: 40px; /* Increased padding */
@@ -14,27 +14,27 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased box shadow */
 }
 
-.room-select {
+.room-selectt {
   width: 100%;
-  padding: 10px; /* Decreased padding */
-  margin-bottom: 30px;
+  padding: 10px;/* Added margin-bottom for spacing between selections */
   border: 2px solid #ccc;
   border-radius: 12px;
+  font-size: 16px;
+}
+
+
+.room-selectt option {
   font-size: 16px; /* Decreased font size */
 }
 
-.room-select option {
-  font-size: 16px; /* Decreased font size */
-}
-
-.room-form label {
+.room-formm label {
   font-size: 20px; /* Increased font size */
   font-weight: bold;
   display: block;
   margin-bottom: 20px; /* Increased margin-bottom */
 }
 
-.room-form button {
+.room-formm button {
   background-color: #4caf50;
   color: white;
   padding: 20px 40px; /* Increased padding */
@@ -45,11 +45,11 @@
   transition: background-color 0.3s ease;
 }
 
-.room-form button:hover {
+.room-formm button:hover {
   background-color: #45a049;
 }
 
-.room-form button:disabled {
+.room-formm button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }

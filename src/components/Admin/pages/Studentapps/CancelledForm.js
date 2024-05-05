@@ -23,7 +23,7 @@ function CancellationForm() {
         <body>
             <Share />
             <Container className="mt-5">
-                <div className="result-container">
+                <div className="result-containerr">
                     <Row>
                         <Col>
                             <Form>

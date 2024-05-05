@@ -187,3 +187,87 @@ function Reports() {
 }
 
 export default Reports;
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import { FaSpinner, FaPlus } from 'react-icons/fa';
+// import './reports.css';
+// import Share from '../../../shared/Share';
+// import Footer from '../../../shared/Footer';
+
+// function Reports() {
+//   const [selectedReport, setSelectedReport] = useState('');
+//   const [buttonClicked, setButtonClicked] = useState(false);
+//   const [loading, setLoading] = useState(false);
+//   const [showDetails, setShowDetails] = useState(false);
+//   const [newTitle, setNewTitle] = useState('');
+//   const [reportDetails, setReportDetails] = useState({});
+//   const [newReportDetails, setNewReportDetails] = useState({
+//     reportName: '',
+//     reportType: '',
+//   });
+//   const [showModal, setShowModal] = useState(false);
+
+//   useEffect(() => {
+//     // Fetch reports from the backend when the component mounts
+//     fetchReports();
+//   }, []);
+
+//   const fetchReports = async () => {
+//     try {
+//       const response = await axios.get('http://your-backend-api/reports');
+//       setReportDetails(response.data);
+//     } catch (error) {
+//       console.error('Error fetching reports:', error);
+//     }
+//   };
+
+//   // Other code remains the same...
+
+//   const handleSaveClick = async () => {
+//     setButtonClicked(true);
+//     setLoading(true);
+//     try {
+//       // Send a request to save the selected report
+//       const response = await axios.post('http://your-backend-api/save-report', {
+//         reportName: selectedReport,
+//         // Add other data you want to save
+//       });
+//       setShowDetails(true);
+//       setLoading(false);
+//     } catch (error) {
+//       console.error('Error saving report:', error);
+//       setLoading(false);
+//     }
+//   };
+
+//   const handleAddReportAndCloseModal = async () => {
+//     try {
+//       // Send a request to add a new report
+//       const response = await axios.post('http://your-backend-api/add-report', newReportDetails);
+//       setNewReportDetails({
+//         reportName: '',
+//         reportType: '',
+//       });
+//       setNewTitle('');
+//       setShowModal(false);
+//       // Fetch updated reports after adding a new one
+//       fetchReports();
+//     } catch (error) {
+//       console.error('Error adding report:', error);
+//     }
+//   };
+
+//   // Other code remains the same...
+
+//   return (
+//     // JSX code remains the same...
+//   );
+// }
+
+// export default Reports;

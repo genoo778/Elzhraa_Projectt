@@ -127,3 +127,96 @@ const Instruct= () => {
 };
 
 export default Instruct;
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios'; // Import Axios
+// import Share from '../shared/Share';
+// import Footer from '../shared/Footer';
+// import { FaTimes } from 'react-icons/fa';
+
+// const Instruct = () => {
+//   const [selectedUniversity, setSelectedUniversity] = useState(0);
+//   const [searchResult, setSearchResult] = useState(null);
+//   const [isLoading, setIsLoading] = useState(false);
+//   const [isTableVisible, setIsTableVisible] = useState(false);
+
+//   const handleUniversityChange = (event) => {
+//     setSelectedUniversity(parseInt(event.target.value, 10));
+//   };
+
+//   const handleSearch = async () => {
+//     if (selectedUniversity === 0) {
+//       alert('يرجى اختيار الجامعة أولاً.');
+//       return;
+//     }
+
+//     setIsLoading(true);
+
+//     try {
+//       const response = await axios.get(`http://your-backend-url/api/instructions/${selectedUniversity}`);
+//       setSearchResult(response.data.instructions);
+//       setIsTableVisible(true);
+//     } catch (error) {
+//       console.error('Error fetching instructions:', error);
+//       alert('حدث خطأ أثناء جلب التعليمات.');
+//     }
+
+//     setIsLoading(false);
+//   };
+
+//   const handleCloseTable = () => {
+//     setIsTableVisible(false);
+//   };
+
+//   return (
+//     <body>
+//       <Share />
+//       <div className="container mt-6">
+//         <div className="row d-flex justify-content-center">
+//           <div className="col-md-17">
+//             <div className="card p-4">
+//               {/* Your JSX code */}
+//               <h5 style={{ marginTop: "30px", fontSize: '30px' }}>قم باختيار الجامعه لمعرفه الارشادات</h5>
+//               <div className="row g-3 mt-2">
+//                 <div className="col-md-3">
+//                   {/* University Selection Dropdown */}
+//                   <select
+//                     className="form-control"
+//                     onChange={handleUniversityChange}
+//                     value={selectedUniversity}
+//                     style={{ marginRight: '190px', width: '500px', marginTop: '9px' }}
+//                   >
+//                     {/* Options */}
+//                   </select>
+//                 </div>
+//                 {/* Search Button */}
+//                 <div className="col-md-3">
+//                   <button className="btn btn-secondary btn-block" onClick={handleSearch} disabled={isLoading} style={{ marginTop: '80px', marginRight: "120px" }}>
+//                     {isLoading ? 'جاري البحث...' : 'استعلام'}
+//                   </button>
+//                 </div>
+//               </div>
+//               {/* Loading Indicator */}
+//               {isLoading && (
+//                 <div className="mt-3">
+//                   <p>جاري التحميل...</p>
+//                 </div>
+//               )}
+//               {/* Table */}
+//               {isTableVisible && searchResult && !isLoading && (
+//                 <div className="mt-3">
+//                   {/* Table Content */}
+//                 </div>
+//               )}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <Footer />
+//     </body>
+//   );
+// };
+
+// export default Instruct;

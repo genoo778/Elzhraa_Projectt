@@ -92,3 +92,73 @@ const Countrys = () => {
 };
 
 export default Countrys;
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import './country.css';
+// import Share from '../../shared/Share';
+// import Footer from '../../shared/Footer';
+
+// const Countrys = () => {
+//   const [citiesData, setCitiesData] = useState([]);
+//   const [selectedCity, setSelectedCity] = useState(null);
+//   const [isLoading, setIsLoading] = useState(false);
+
+//   useEffect(() => {
+//     // Fetch all cities data from the backend API when the component mounts
+//     axios.get('/api/cities')
+//       .then(response => {
+//         setCitiesData(response.data);
+//       })
+//       .catch(error => {
+//         console.error('Error fetching cities data:', error);
+//       });
+//   }, []);
+
+//   const handleCitySelect = (event) => {
+//     setIsLoading(true);
+//     setSelectedCity(event.target.value);
+
+//     // Simulate loading with a delay
+//     setTimeout(() => {
+//       setIsLoading(false);
+//     }, 1000);
+//   };
+
+//   return (
+//     <body>
+//       <Share />
+//       <div className={`form-container ${selectedCity ? 'active' : ''}`}>
+//         <div style={{ backgroundColor: '#123252', padding: '20px', width: '115.75%' , marginTop:'-60px',marginRight:'-59px' }}>
+//           <h1 style={{ marginRight: '100px' }}>البلاد - جامعة حلوان</h1>
+//           <img src="https://th.bing.com/th/id/OIP.wscXCxEte7OAsOtvrQo_tAHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Helwan University Logo" className='img' />
+//         </div>
+//         <form className="city-form" style={{marginTop:'40px'}}>
+//           <label htmlFor="citySelect" style={{ color: '#123252' }}>اختر مدينة:</label>
+//           <select id="citySelect" value={selectedCity} onChange={handleCitySelect}>
+//             <option value="">اختر مدينة</option>
+//             {citiesData.map(city => (
+//               <option key={city.id} value={city.id}>{city.name}</option>
+//             ))}
+//           </select>
+//           {isLoading && <div className="loading-icon">Loading...</div>}
+//           <div className="city-details" style={{ boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', padding: '20px', borderRadius: '8px', marginTop: '20px' }}>
+//             {selectedCity && !isLoading && (
+//               <>
+//                 <h2>{citiesData.find(city => city.id === selectedCity).name}</h2>
+//                 <p>{citiesData.find(city => city.id === selectedCity).details}</p>
+//                 {/* Display other city details here */}
+//               </>
+//             )}
+//           </div>
+//           <button className="btn-primary" onClick={() => setSelectedCity(null)} style={{marginRight:'300px'}}>اختر مدينة أخرى</button>
+//         </form>
+//       </div>
+//       <Footer />
+//     </body>
+//   );
+// };
+
+// export default Countrys;

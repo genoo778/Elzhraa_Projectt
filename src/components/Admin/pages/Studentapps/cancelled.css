@@ -1,74 +1,78 @@
-/* App.css */
+/* cancellationForm.css */
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container styles */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header styles */
-.header {
-    background-color: #333;
-    color: #fff;
+    background-color: #f0f0f0;
+  }
+  
+  /* Container styles */
+  .result-containerr {
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-}
-
-/* Form styles */
-.form-group {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .result-containerr h1 {
+    color: #123252;
+    font-size: 24px;
     margin-bottom: 20px;
-}
-
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea.form-control {
-    resize: none; /* Disable textarea resizing */
-}
-
-/* Button styles */
-.btn-primary {
-    background-color: #007bff;
+  }
+  
+  /* Image styles */
+  .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    color: #123252;
+    font-size: 18px;
+  }
+  
+  /* Button styles */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-/* Spinner styles */
-.spinner-border {
-    color: #007bff;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-width: 0.2em;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Additional Notes styles */
+  .text-muted {
+    font-size: 14px;
+    color: #123252;
+  }
+  
+  .text-muted ul {
+    padding-left: 20px;
+  }
+  
+  /* Confirmation Card styles */
+  .confirmation-card {
+    margin-top: 20px;
+  }
+  
+  .confirmation-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-success {
+    margin-top: 20px;
+  }
+  
