@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Form, Button, Modal } from 'react-bootstrap';
-import './collage.css';
 import Share from '../../shared/Share';
 import Footer from '../../shared/Footer';
+import './collage.css';
 
 const ContactForm = () => {
     // State for editable text
@@ -54,24 +54,25 @@ const ContactForm = () => {
     };
 
     return (
-        <body>
-            <Share />
+        <>
+        <Share />
+        <div style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width:'70%',height:'60%' ,borderRadius: '10px', padding: '20px', backgroundColor: '#fff', margin: '200px' }}>
+        
             <Container className="contact-form">
-                <div style={{backgroundColor:'#123252',padding:'49px'}}>
+                <div style={{ backgroundColor: '#123252', padding: '39px',marginTop:'-68px' }}>
                     <h1>صور الجامعة - جامعة حلوان</h1>
                     <img src="https://th.bing.com/th/id/OIP.wscXCxEte7OAsOtvrQo_tAHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Helwan University Logo" className='img' />
                 </div>
 
-
                 <Form>
                     {/* University Logo Text */}
-                    <Form.Group style={{ marginLeft: '500px', marginTop: '10px' }}>
+                    <Form.Group style={{ marginLeft: '500px', marginTop: '-80px' }}>
                         <p className='pp'>شعار الجامعة</p>
                         <Form.Label>{editableText}</Form.Label>
                         <img src="https://th.bing.com/th/id/R.5ac465941798a5dfdeb143f7bdc17b4f?rik=YKRWOPxNQ9wLFw&pid=ImgRaw&r=0" className='imag' alt="Helwan University Logo" />
                         <Button className='btnn' variant="primary" onClick={() => handleEdit('text')}>تعديل</Button>
                     </Form.Group>
-                    <Form.Group style={{ marginRight: '500px', marginTop: '-340px' }}>
+                    <Form.Group style={{ marginRight: '500px', marginTop: '-470px' }}>
                         <p className='pp'>توقيع الكارنيه</p>
                         <Form.Label>{cardFormatText}</Form.Label>
                         <img src="https://th.bing.com/th/id/R.7bb736ce293eafd480aaaa067ca6bb71?rik=OqyynssUyjBr%2bw&pid=ImgRaw&r=0" className='imag' alt="Helwan University Logo" />
@@ -99,8 +100,10 @@ const ContactForm = () => {
                     </Modal.Footer>
                 </Modal>
             </Container>
-            <Footer />
-        </body>
+          
+        </div>
+        <Footer />
+        </>   
     );
 };
 
