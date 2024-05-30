@@ -13,7 +13,7 @@ const Loginst = () => {
     try {
       const response = await axios.post('http://your-backend-url/api/login', { username, password });
       localStorage.setItem('token', response.data.token); // Store the token in localStorage
-      window.location.href = '/dashboard'; // Redirect to the dashboard or home page
+      window.location.href = '/h'; // Redirect to the dashboard or home page
     } catch (error) {
       setError('Invalid username or password');
     }
