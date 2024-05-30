@@ -163,7 +163,7 @@ const Countrys = () => {
               <>
                 <h2>{citiesData.find(city => city.id === selectedCity).name}</h2>
                 <p>{citiesData.find(city => city.id === selectedCity).details}</p>
-        ]
+        
               </>
             )}
           </div>
