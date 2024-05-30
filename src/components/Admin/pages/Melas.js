@@ -122,7 +122,7 @@ function Melas() {
         <label>نوع الوجبة:</label>
         <input type="text" value={mealDetails[selectedType]?.mealName} readOnly />
       </div>
-      <div className="form-group">
+      <div className="form-group" style={{marginRight:"30px"}}>
         <label>وقت بداية الوجبة:</label>
         <input type="text" value={mealDetails[selectedType]?.startTime} readOnly />
       </div>
@@ -130,7 +130,7 @@ function Melas() {
         <label>وقت نهاية الوجبة:</label>
         <input type="text" value={mealDetails[selectedType]?.endTime} readOnly />
       </div>
-      <div className="form-group">
+      <div className="form-group"style={{marginRight:"30px"}}>
         <label>آخر تعديل:</label>
         <input type="text" value={mealDetails[selectedType]?.updatedAt?.toLocaleString()} readOnly />
       </div>

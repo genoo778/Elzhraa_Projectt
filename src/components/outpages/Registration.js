@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Share from '../shared/Share';
 import Footer from '../shared/Footer';
+import axios from 'axios'; 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
     nationalId: '',
@@ -38,21 +39,27 @@ const SignupForm = () => {
     }));
   };
 
-  const handleDateChange = (date) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      birthDate: date,
-    }));
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic or API call here
-    console.log('Form Data:', formData);
+    try {
+      const response = await axios.post('http://your-backend-url/signup', formData);
+      console.log('Form submitted successfully:', response.data);
+     
+    } catch (error) {
+      console.error('Error submitting form:', error);
+   
+    }
   };
+  
+  const handleToggleForm = async () => {
+    try {
+      const response = await axios.put('http://your-backend-url/toggle-form/:id', { id: 'your-record-id' });
+      console.log('Form toggled successfully:', response.data);
+     
+    } catch (error) {
+      console.error('Error toggling form:', error);
 
-  const handleToggleForm = () => {
-    setIsPrimaryForm((prevIsPrimaryForm) => !prevIsPrimaryForm);
+    }
   };
   return (
     <body style={{ background: '#BCC9FD' }}>
@@ -393,13 +400,13 @@ const SignupForm = () => {
                                 <Form.Group controlId="formCollegeAndYear">
                                   <Form.Label>الكلية والفرقة</Form.Label>
                                   <Form.Control
-                                    as="select"
+                                    type="text"
                                     name="collegeAndYear"
                                     value={formData.collegeAndYear}
                                     onChange={handleChange}
                                     required
                                   >
-                                    <option v alue="">اختر</option>
+                                    
                                   </Form.Control>
                                 </Form.Group>
                               </Col>
@@ -408,12 +415,12 @@ const SignupForm = () => {
                                 <Form.Group controlId="formLastYearGPA">
                                   <Form.Label>تقدير العام الماضى</Form.Label>
                                   <Form.Control
-                                    as="select"
+                                    type="number"
                                     name="lastYearGPA"
                                     value={formData.lastYearGPA}
                                     onChange={handleChange}
                                   >
-                                    <option value="">اختر</option>
+                                   
                                   </Form.Control>
                                 </Form.Group>
                               </Col>
@@ -443,6 +450,9 @@ const SignupForm = () => {
 
                                   >
                                     <option value="">اختر</option>
+                                    <option value="سكن عادى">سكن عادى</option>
+                                    <option value="سكن بدون تغذية">سكن بدون تغذية</option>
+                                    <option value="سكن عادى">سكن مميز</option>
                                   </Form.Control>
                                 </Form.Group>
                               </Col>
@@ -460,6 +470,8 @@ const SignupForm = () => {
                                     <option value="">اختر</option>
                                     <option value="سكن عادى">سكن عادى</option>
                                     <option value="سكن بدون تغذية">سكن بدون تغذية</option>
+                                    <option value="سكن عادى">سكن مميز</option>
+                                   
                                   </Form.Control>
                                 </Form.Group>
                               </Col>
@@ -498,41 +510,8 @@ const SignupForm = () => {
                             {/* ... (previous form fields) ... */}
 
                             {/* سكن بدون تغذية */}
-                            <Col md={6} className="mb-4 d-flex align-items-center">
-                              <Form.Check
-                                type="checkbox"
-                                id="housingWithoutMeals"
-                                name="housingWithoutMeals"
-                                checked={formData.housingWithoutMeals}
-                                onChange={handleChange}
-                                className="mr-2"
-                              />
-                              <Form.Label htmlFor="housingWithoutMeals">سكن بدون تغذية</Form.Label>
-                            </Col>
+                           
 
-                            <Col md={6} className="mb-6 d-flex align-items-center">
-                              <Form.Check
-                                type="checkbox"
-                                id="familyAbroad"
-                                name="familyAbroad"
-                                checked={formData.familyAbroad}
-                                onChange={handleChange}
-                                className="mr-2"
-                              />
-                              <Form.Label htmlFor="familyAbroad">الأسرة بالخارج</Form.Label>
-                            </Col>
-
-                            <Col md={6} className="mb-4 d-flex align-items-center">
-                              <Form.Check
-                                type="checkbox"
-                                id="specialNeeds"
-                                name="specialNeeds"
-                                checked={formData.specialNeeds}
-                                onChange={handleChange}
-                                className="mr-2"
-                              />
-                              <Form.Label htmlFor="specialNeeds">ذوى احتياجات خاصة</Form.Label>
-                            </Col>
 
                             {/* ... (continue with other form fields) ... */}
 
@@ -908,25 +887,3 @@ const SignupForm = () => {
 export default SignupForm;
 
 
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   try {
-//     const response = await axios.post('http://your-backend-url/signup', formData);
-//     console.log('Form submitted successfully:', response.data);
-//     // Add any additional logic here (e.g., show success message, redirect)
-//   } catch (error) {
-//     console.error('Error submitting form:', error);
-//     // Handle error (e.g., show error message to user)
-//   }
-// };
-
-// const handleToggleForm = async () => {
-//   try {
-//     const response = await axios.put('http://your-backend-url/toggle-form/:id', { id: 'your-record-id' });
-//     console.log('Form toggled successfully:', response.data);
-//     // Update state or perform any actions based on the response
-//   } catch (error) {
-//     console.error('Error toggling form:', error);
-//     // Handle error (e.g., show error message to user)
-//   }
-// };

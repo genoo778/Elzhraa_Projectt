@@ -120,7 +120,7 @@ function YourComponent() {
                   <label>اسم التميز :</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.housingModel} onChange={(e) => handleInputChange(e, 'housingModel')} />
                 </div>
-                <div className="form-group">
+                <div className="form-group"style={{marginRight:"30px"}}>
                   <label>نوع السكن:</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.housingType} onChange={(e) => handleInputChange(e, 'housingType')} />
                 </div>
@@ -128,7 +128,7 @@ function YourComponent() {
                   <label>السعه:</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.pathway} onChange={(e) => handleInputChange(e, 'pathway')} />
                 </div>
-                <div className="form-group">
+                <div className="form-group"style={{marginRight:"30px"}}>
                   <label>فعال:</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.studentType} onChange={(e) => handleInputChange(e, 'studentType')} />
                 </div>
@@ -164,7 +164,7 @@ function YourComponent() {
                     <label>اسم التميز :</label>
                     <input type="textt" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group" style={{marginRight:"30px"}}>
                     <label>نوع السكن:</label>
                     <input type="textt" value={newOptionDetails.housingModel} onChange={(e) => handleInputChange(e, 'housingModel')} />
                   </div>
@@ -172,8 +172,8 @@ function YourComponent() {
                     <label>السعه:</label>
                     <input type="textt" value={newOptionDetails.housingType} onChange={(e) => handleInputChange(e, 'housingType')} />
                   </div>
-                  <div className="form-group">
-                    <label>نوع الطلاب:</label>
+                  <div className="form-group" style={{marginRight:"30px"}}>
+                    <label>نوع الطلاب:</label >
                     <input type="textt" value={newOptionDetails.studentType} onChange={(e) => handleInputChange(e, 'studentType')} />
                   </div>
                 </form>

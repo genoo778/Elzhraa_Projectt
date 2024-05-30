@@ -124,7 +124,7 @@ function Rsoom() {
                   <label>اسم الرسوم :</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.housingModel} onChange={(e) => handleInputChange(e, 'housingModel')} />
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{marginRight:"30px"}}>
                   <label>اجباري للتعبءه:</label>
                   <input type="text" value={universityDetails[selectedUniversity]?.housingType} onChange={(e) => handleInputChange(e, 'housingType')} />
                 </div>

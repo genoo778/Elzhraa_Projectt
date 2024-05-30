@@ -59,7 +59,7 @@ const ContactForm = () => {
         <div style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width:'70%',height:'60%' ,borderRadius: '10px', padding: '20px', backgroundColor: '#fff', margin: '200px' }}>
         
             <Container className="contact-form">
-                <div style={{ backgroundColor: '#123252', padding: '39px',marginTop:'-68px' }}>
+                <div style={{ backgroundColor: '#123252', padding: '29px',marginTop:'-69px',width:'107.5%' }}>
                     <h1>صور الجامعة - جامعة حلوان</h1>
                     <img src="https://th.bing.com/th/id/OIP.wscXCxEte7OAsOtvrQo_tAHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Helwan University Logo" className='img' />
                 </div>

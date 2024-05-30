@@ -13,9 +13,8 @@ const Login = () => {
 
     try {
       const response = await axios.post('http://your-backend-url/api/login', { username, password });
-      // Handle successful authentication (e.g., set user session, redirect)
-      console.log(response.data); // Log the response from the backend
-      window.location.href = '/hh'; // Redirect to another page on success
+      console.log(response.data); 
+      window.location.href = '/hh'; 
     } catch (error) {
       setError('Invalid username or password');
     }
